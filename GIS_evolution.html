@@ -68,5 +68,12 @@
 		</div>
 		<script src="js/lib/jquery-1.7.1.min.js"></script>
 		<script src="js/touch.timeline.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".timeline-content img").each(function () {
+					$(this).after('<a href="' + this.src + '"><i>View a full version of this image</i></a>');
+				});
+			});
+		</script>
   	</body>
 </html>
